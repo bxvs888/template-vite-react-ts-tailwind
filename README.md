@@ -13,7 +13,7 @@ A starter [Vite](https://vitejs.dev/) template having:
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- Multiple [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) plugins installed
+- Multiple [Oxc](https://oxc.rs) recommended rules are configured
 
 > [!IMPORTANT]
 > 
@@ -63,7 +63,7 @@ $ pnpm run dev
 # yarn run dev
 ```
 
-> We've already implemented some recommended configurations in `eslint.config.mjs`, `prettier.config.mjs`. Feel free to edit them if you have your own preferences.
+> We've already implemented some recommended configurations in `.oxlintrc.json`, `.oxfmtrc.json`. Feel free to edit them if you have your own preferences.
 
 ## Contributing
 

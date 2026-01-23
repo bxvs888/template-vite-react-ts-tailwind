@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import reactLogo from '/react.svg';
 import viteLogo from '/vite.svg';
 
 export const App = () => {
   const [count, setCount] = useState(0);
+
+  const increase = useCallback(() => {
+    setCount((count) => count + 1);
+  }, []);
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900 p-8 text-white">
@@ -30,7 +34,7 @@ export const App = () => {
       <div className="mb-8 flex flex-col items-center justify-center rounded-lg bg-gray-800 p-6 shadow-lg">
         <button
           type="button"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={increase}
           className="mb-4 rounded bg-gray-700 px-4 py-2 font-medium text-white transition-colors duration-200 hover:bg-gray-600"
         >
           count is {count}
